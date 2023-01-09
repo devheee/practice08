@@ -1,0 +1,98 @@
+#header h1 {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0;
+    background: #f9f9f9;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+#header .inner .left {
+    display: flex;
+    gap: 60px;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+}
+
+#header .inner .left li a {
+    position: relative;
+    display: block;
+}
+
+#header .inner .left li:hover a::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #1253fa;
+}
+
+#header .inner .right {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+#header .inner .right li a {
+    position: relative;
+}
+
+#header .inner .right li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+#header .inner .right .blue a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #1253fa;
+}
+
+
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .main_slide .itm img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.mainVisual .main_slide_arrows button {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 24px;
+    border-radius: 50%;
+}
+
+.mainVisual .main_slide_arrows button:first-child {
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .main_slide_arrows button:last-child {
+    margin: 0 0 0 700px;
+}
