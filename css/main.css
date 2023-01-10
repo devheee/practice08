@@ -96,3 +96,211 @@
 .mainVisual .main_slide_arrows button:last-child {
     margin: 0 0 0 700px;
 }
+
+
+
+.mainContent .inner h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #111;
+    margin: 0 0 50px 0;
+}
+
+.mainContent .inner ul {
+    position: relative;
+    height: 900px;
+    text-align: center;
+}
+
+.mainContent .inner ul::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 120px;
+    height: 800px;
+    background: url(../img/peu.jpg) no-repeat center center;
+    filter: grayscale(80%)
+}
+
+.mainContent .inner ul li {
+    position: absolute;
+}
+
+.mainContent .inner ul .box01 {
+    top: 0;
+    left: 0;
+}
+
+.mainContent .inner ul .box02 {
+    top: 0;
+    left: 270px;
+}
+
+.mainContent .inner ul .box03 {
+    top: 0;
+    left: 540px;
+}
+
+.mainContent .inner ul .box04 {
+    top: 0;
+    left: 810px;
+}
+
+.mainContent .inner ul .box05 {
+    top: 270px;
+    left: 0;
+}
+
+.mainContent .inner ul .box06 {
+    top: 270px;
+    left: 540px;
+}
+
+.mainContent .inner ul .box07 {
+    top: 540px;
+    left: 0;
+}
+
+.mainContent .inner ul .box08 {
+    top: 540px;
+    left: 270px;
+}
+
+.mainContent .inner ul .box09 {
+    top: 540px;
+    left: 810px;
+}
+
+.mainContent .inner ul li .over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #fff;
+
+    width: 100%;
+    transition: opacity .3s ease;
+}
+
+.mainContent .inner ul li .over h3 {
+    margin: 0 0 30px 0;
+}
+
+.mainContent .inner ul li .over span {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+}
+
+.mainContent .inner ul li a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(4, 69, 244, .85);
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.mainContent .inner ul li:hover .over {
+    opacity: 1;
+}
+
+.mainContent .inner ul li:hover a::before {
+    opacity: 1;
+}
+
+.mainSns {
+    padding: 0 0 150px 0;
+}
+
+.mainSns .inner h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #111;
+    margin: 0 0 50px 0;
+}
+
+.mainSns .inner .sns {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.mainSns .inner .sns li {
+    position: relative;
+}
+
+.mainSns .inner .sns figure {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.mainSns .inner .sns .txt {
+    margin: 10px 0 0 120px;
+}
+
+.mainSns .inner .sns .txt strong {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin: 0 0 8px 0;
+}
+
+.mainSns .inner .sns .txt p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#footer {
+    padding: 50px 0;
+    background: #292929;
+    color: #fff;
+}
+
+#footer .inner .sitemap {}
+
+#footer .inner .sitemap>ul {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+#footer .inner .sitemap ul li>a {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#footer .inner .sitemap ul .comp {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+#footer .inner .sitemap ul .comp .sub01 {
+    float: left;
+    width: 50%;
+}
+
+#footer .inner .sitemap ul .comp .sub02 {
+    float: rig;
+    width: 50%;
+}
