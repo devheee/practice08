@@ -35,6 +35,17 @@
     background: #1253fa;
 }
 
+#header .inner .left li a.on::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #1253fa;
+}
+
+
 #header .inner .right {
     display: flex;
     gap: 30px;
@@ -398,19 +409,23 @@
     background: #0d5ffb;
     color: #fff;
     line-height: 40px;
-    font-size: 13px;
+    font-size: 14px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    letter-spacing: 0.06em;
 }
 
 .sub_bar .inner .menu span {
     display: inline-block;
     margin: 0 15px;
+    color: #c0d2fc;
 }
 
 .sub_bar .inner .menu>div {
     display: inline-block;
     margin: 0 5px;
+    color: #c0d2fc;
+    font-size: 10px;
 }
 
 .sub_bar .inner {
@@ -512,4 +527,51 @@
     font-size: 13px;
     padding: 7px 25px;
     border: 1px solid #111;
+}
+
+
+.faq_Visual .inner {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.faq_Visual .accodian {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.faq_Visual .accodian ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.faq_Visual .accodian li button {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    border: none;
+    border-top: 1px solid #111;
+    cursor: pointer;
+}
+
+.faq_Visual .accodian .content {
+    display: none;
+    margin: 0;
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+.faq_Visual .accodian li.on button {
+    font-weight: bold;
+}
+
+.faq_Visual .accodian li.on .content {
+    display: block;
 }
