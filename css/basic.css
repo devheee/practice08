@@ -256,3 +256,16 @@ button {
         padding: 5px;
     }
 }
+
+.s_h2 {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    color: #111;
+}
+
+.s_p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
