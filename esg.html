@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/main.css?ver=20230109">
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <link rel="stylesheet" href="./css/main.css?ver=20230111">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js?ver=20230109"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js?ver=20230111"></script>
 </head>
 
 <body>
@@ -30,7 +33,7 @@
                     <li><a href="./company.html">COMPANY</a></li>
                     <li><a href="">SOCIAL &amp; MEDIA</a></li>
                     <li><a href="./esg.html">ESG</a></li>
-                    <li><a href="">CUSTOMER CENTER</a></li>
+                    <li><a href="./faq.html">CUSTOMER CENTER</a></li>
                 </ul>
             </nav>
             <nav>
@@ -50,7 +53,7 @@
             <div class="inner">
                 <div class="menu">
                     <i class="xi-home"></i>
-                    <span> ESG </span>
+                    <a href="#!"><span> ESG </span></a>
                     <div><i class="xi-angle-right"></i></div>
                     <span>ESG</span>
                 </div>
@@ -65,7 +68,7 @@
         </div>
         <div class="esg_wrap">
             <div class="box">
-                <div class="left">
+                <div class="left" data-aos="fade-right" data-aos-duration="3000">
                     <strong>식품안전경영</strong>
                     <p>품질 최우선 경영에 하이트진로가 앞장서겠습니다.</p>
                     <a href="">LEARN MORE <i class="xi-arrow-right"></i></a>
@@ -78,14 +81,14 @@
                 <div class="left">
                     <img src="./img/esg02.png" alt="">
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left" data-aos-duration="3000">
                     <strong>지속가능환경경영</strong>
                     <p>백년대계를 책임지는 지속 가능한 환경경영을 실천하겠습니다.</p>
                     <a href="">LEARN MORE <i class="xi-arrow-right"></i></a>
                 </div>
             </div>
             <div class="box">
-                <div class="left">
+                <div class="left" data-aos="fade-right" data-aos-duration="3000">
                     <strong>CSR</strong>
                     <p>모두가 즐겁고 행복한 세상을 만들기 위한 실천입니다.</p>
                     <a href="">LEARN MORE <i class="xi-arrow-right"></i></a>
@@ -98,7 +101,7 @@
                 <div class="left">
                     <img src="./img/esg04.png" alt="">
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left" data-aos-duration="3000">
                     <strong>Ethical Management</strong>
                     <p>투명하고 공정한 기업, 하이트진로가 앞장서겠습니다.</p>
                     <a href="">LEARN MORE <i class="xi-arrow-right"></i></a>
@@ -204,6 +207,10 @@
             </div>
 
         </footer>
+
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
