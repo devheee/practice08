@@ -538,12 +538,12 @@
 .faq_Visual .accodian {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 0 100px 0;
 }
 
 .faq_Visual .accodian ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -551,27 +551,78 @@
 }
 
 .faq_Visual .accodian li button {
-    display: block;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
     width: 100%;
+    background: transparent;
     color: #000;
     text-align: left;
     border: none;
-    border-top: 1px solid #111;
+    border-bottom: 1px solid #7b7b7b;
     cursor: pointer;
+
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.faq_Visual .accodian li button span i {
+    margin: 0 0 0 50px;
+}
+
+.faq_Visual .accodian li:first-child {
+    border-top: 2px solid #111;
 }
 
 .faq_Visual .accodian .content {
     display: none;
     margin: 0;
-    padding: 20px;
-    border-top: 1px solid #333;
+    padding: 20px 40px;
+}
+
+.faq_Visual .accodian .content span {
+    display: block;
+    margin: 0 0 20px 30px;
+    line-height: 30px;
+    color: #666;
+    letter-spacing: 0.035em;
+    font-size: 18px;
+    font-weight: 300;
+    word-break: keep-all;
+}
+
+.faq_Visual .accodian .content .b {
+    margin: 0 0 5px 25px;
+    font-weight: 500;
+}
+
+.faq_Visual .accodian .content .link_b a {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 0 10px;
+    border: 1px solid #444;
+}
+
+.faq_Visual .accodian .content .link_b a i {
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+
+.faq_Visual .accodian .content .under_b {
+    text-decoration: underline;
+}
+
+.faq_Visual .accodian .content .first {
+    display: block;
+    margin: 0 0 10px 3px;
+
 }
 
 .faq_Visual .accodian li.on button {
-    font-weight: bold;
+    color: #0d5ffb;
 }
 
 .faq_Visual .accodian li.on .content {
     display: block;
+    background: #f9f9f9;
 }
