@@ -35,7 +35,7 @@
     background: #1253fa;
 }
 
-#header .inner .left li a.on::after {
+#header .inner .left li.on a::after {
     content: "";
     position: absolute;
     bottom: 40px;
@@ -421,6 +421,10 @@
     color: #c0d2fc;
 }
 
+.sub_bar .inner .menu>span {
+    color: #2defeb;
+}
+
 .sub_bar .inner .menu>div {
     display: inline-block;
     margin: 0 5px;
@@ -440,11 +444,11 @@
 }
 
 .company_Visual {
-    padding: 0 0 150px 0;
+    padding: 0 0 100px 0;
 }
 
 .company_Visual .inner {
-    padding: 100px 0;
+    padding: 100px 0 70px 0;
     text-align: center;
 }
 
@@ -456,7 +460,8 @@
 }
 
 .company_Visual .ceo_wrap h3 {
-    margin: 28px 0 0 550px;
+    display: block;
+    padding: 0 0 0 555px;
 }
 
 .company_Visual .ceo_wrap .box {
@@ -532,13 +537,13 @@
 
 .faq_Visual .inner {
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .faq_Visual .accodian {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 0 100px 0;
+    padding: 0 0 150px 0;
 }
 
 .faq_Visual .accodian ul {
@@ -628,7 +633,7 @@
 }
 
 .social_Visual .inner {
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 .social_Visual .inner .sns_list {
